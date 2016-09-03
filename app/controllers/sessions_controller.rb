@@ -1,9 +1,5 @@
 class SessionsController < ApplicationController
 
-  def login
-
-  end
-
   def create
     if params[:name] == nil || params[:name].empty?
       return redirect_to :login
