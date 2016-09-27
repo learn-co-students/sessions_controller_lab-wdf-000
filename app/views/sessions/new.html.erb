@@ -1,5 +1,8 @@
-<%= form_tag ({controller: 'sessions', action: 'create', method: 'post'}) do %>
-  <input name=name>
-  <input type=submit value='login'>
-<% end %>
+<div style="width: 80%; margin: 0 auto;">
+  <p>Please login:</p>
+  <%= form_tag ({controller: 'sessions', action: 'create', method: 'post'}) do %>
+    <input name=name>
+    <input type=submit value='login'>
+  <% end %>
+</div>
 
