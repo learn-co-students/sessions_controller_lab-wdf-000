@@ -58,4 +58,13 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  post '/login' => 'sessions#create'
+  get '/' => 'applications#hello'
+  resources :sessions, only: [:new]
+  post '/destroy' => 'sessions#destroy'
+
+
+
+
 end
